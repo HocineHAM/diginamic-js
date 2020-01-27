@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta author="Sébastien Adam">
+    <meta charset="UTF-8">
+    <meta name="language" content="fr">
+    <title>Nombre aléatoire</title>
+  </head>
+  <body>
+    <p>
+      Vous devez trouver un nombre entre 1 et <span id="maxValue"></span>.
+    </p>
+    <div>
+      <form id="myForm" onsubmit="return verifyReply();">
+        <div>
+            Votre choix <input type="text" id="valueField" placeholder="Entrez un nombre "> 
+          <p>Nombre de chances restantes : <b id='nb'>5</b> </p> 
+          <input  type="submit" onclick="compteur()" value="Choisir">
+        </div>
+      </form>
+    </div>
+   
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
+
